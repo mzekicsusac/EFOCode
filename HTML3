@@ -37,6 +37,17 @@ Moji prioriteti:
     </tr>  
 </table>
 
+<!-- Primjer tablice s dva retka i dva stupca i borderom: -->
+<table border=1 width=500 height=200 cellspacing=2 cellpadding=2>
+<tr>
+<td align="center" bgcolor="FFFFCC">Prva ćelija</td>
+<td align="center">Druga ćelija</td>
+</tr>
+<tr>
+<td align="center" valign=middle bgcolor="red">Treća ćelija</td>
+<td align=center>Četvrta ćelija</td>
+</tr>
+</table>
 
 
 
