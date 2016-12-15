@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyles.css" media="screen" />
+</head>
+<body>
+
+<p>Ako je stil definiran za svaki paragraf, vidjet će se ovdje.</p>
+<p id="para1">Ovo je stil samo za paragraf pod nazivom para1.</p>
+<p id="para2">Ovo je stil za para2</p>
+
+</body>
+</html>
+
+
