@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+      <TITLE>Ovdje naslov stranice koji će se vidjeti u title bar-u preglednika</TITLE> 
+</HEAD> 
+<BODY>
+<!-- komentar: ovo je numerirana lista (ordered list) -->
+Moji prioriteti:
+<ol>
+<li>ljubav
+<li>fakultet
+<li>društvo
+</ol>
+Moji prioriteti:
+<ul>
+<li>fakultet
+<li>ljubav
+<li>društvo
+</ul>
+
+
+<!-- komentar: ovo je nenumerirana lista (unordered list) -->
+
+Moji prioriteti:
+<ol>
+<li>ljubav
+<li>fakultet
+<li>društvo
+</ol>
+Moji prioriteti:
+<ul>
+<li>fakultet
+<li>ljubav
+<li>društvo
+</ul>
+</BODY> 
+</HTML>
