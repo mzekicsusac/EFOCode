@@ -1,0 +1,41 @@
+
+
+/* standardni elementi: */
+
+body {
+    background-color: light-gray;
+    font-size: 100%;
+}
+
+h1 {
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    font-size: 2.5em; /* adekvatno 40px */
+}
+h2 {
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    font-size: 1.875em; /* adekvatno 30px */
+}
+
+
+p {
+    font-family: verdana;
+    text-align: left;
+    color: black;
+    font-size: 1em; /* adekvatno 14px */
+}
+
+
+/* primjeri id-eva: */
+
+.para1{
+   color: red;
+   align: center;
+}
+.para2{
+   font-size:20px;
+   align: right;
+}

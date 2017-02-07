@@ -1,0 +1,152 @@
+
+CSS  (Cascade Style Sheet) je stilski jezik i odreðuje kako æe se pojedini html elementi vidjeti na zaslonu, papiru ili drugom mediju razlièitih velièina.
+Cilj je u samom html dokumentu pozvati samo element bez formatiranja, a sve formatiranje definirati u css-u, npr.
+Sintaksa:
+
+selector {property:value;}
+
+U CSS-u razlikujemo ove tipove selektora:
+- element, 
+- id,
+- class.
+------------------------------
+Element selektor
+------------------------------
+- definira stil na temelju naziva elementa i odnosi se na sve elemente u html dokumentu s tim nazivom.
+Npr. p element definira stil za sve paragrafe u dokumentu, table element definira stil za sve tablice u dokumentu itd.
+
+
+Primjer elemenata:
+
+- standardni sa standardnim nazivima tagova u html-u, npr.: 
+body, h1, h2, img, a, ....
+
+p {
+    text-align: left;
+    color: black;
+}
+
+- proizvoljni kojima sami kreiramo nazive, npr:
+naslov, podnaslov, obicantext, footertext, ....
+
+
+------------------------------
+Id selektor
+------------------------------
+Poziva se preko id atributa nekog HTML elementa. To je selektor koji definira neki specifièni element. Npr. specifièni paragraf koji je po neèemu drugaèiji od ostalih paragrafa.
+
+Jedinstven je na jednoj stranici, dakle njime se poziva jedinstveni selektor.
+U CSS-u se definira tako da se stavi hash (#) ispred naziva selektora u css datoteci, a u HTML dokumentu taj selektor se poziva sa: <element id="naziv id-a"> 
+
+Primjer:
+- u CSS-u:
+
+#center
+{
+    text-align: center;
+    color: red;
+}
+
+- u HTMLu se poziva sa:
+<p id="center">Ovo je centrirani paragraf </p>
+
+------------------------------
+Class selektor
+------------------------------
+Koristi se za izbor elemenata pomoæu posebnog atributa class. Može se koristi više puta za više razlièitih elemenata unutar HTML dokumenta,
+a može imati i podklase koje nasljeðuju atribute klasa.
+
+Poziva se sa znakom . ispred naziva klase.
+
+In the example below, all HTML elements with class="center" will be red and center-aligned:
+
+- poèinje s toèkom, i dajemo mu proizvoljna imena, npr.:
+
+
+.center 
+{
+    text-align: center;
+}
+
+.center red
+{
+    color: red;
+}
+
+- u HTMLu se poziva sa:
+<div class="center">Ovo je centrirani odjeljak</div>
+<div class="center">Ovo je takoðer centrirani odjeljak</div>
+<div class="center red">Ovo je centrirani odjeljak koji je crvene boje</div>
+
+------------------------------
+Grupiranje selektora
+------------------------------
+
+Ako neki selektori imaju zajednièka svojstva, npr.
+
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    color: red;
+}
+
+p {
+    text-align: center;
+    color: red;
+}
+
+
+mogu se grupirati tako da se njihovi nazivi navedu sa zarezom, a svojstva navedu samo jednom za sve njih:
+
+
+h1, h2, p {
+    text-align: center;
+    color: red;
+}
+
+
+
+------------------------------
+Preporuke za definiranje stila fonta
+------------------------------
+
+Velièinu slova možete odrediti u pixelima ili em.
+Preporuka: koristiti em.
+Zašto? Da bi korisnik mogao poveæati font u izborniku browsera. To je i preporuka W3C.
+
+Kako preraèunati iz pixela u em jedinice?
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+The size can be calculated from pixels to em using this formula: pixels/16=em
+
+Primjer:
+
+body {
+    background-color: light-gray;
+    font-size: 100%;
+}
+
+h1 {
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    font-size: 2.5em; /* adekvatno 40px */
+}
+
+
+------------------------------
+Uporaba float svojstva
+------------------------------
+
+Ako se u CSS-u stavi svojstvo float za neki selektor, taj æe selektor biti poravnat po odreðenoj margini u odnosu na neki drugi koji je uz njega naveden u HTML dokumentu
+
+img {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+- pozivanje u HTMLu
